@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset = "utf-8" />
+<link rel="stylesheet" type="text/css" href="assignment04.css">
+<style>
+#clubImg{
+width:95%;
+}
+form{
+font-family: Georgia;
+font-size: 12px;
+text-align: left;
+display: inline-block;
+width: 90%
+}
+
+#firstForm {
+  border: red 5px solid;
+  border-style: inset;
+}
+#firstForm label{
+  padding:5px;
+}
+form input{
+  width: 75px;
+  margin: 5px;
+}
+form .radio{
+  width: 20px;
+}
+form .adress{
+  width: 200px;
+}
+form{
+  border: none;
+}
+
+#parents {
+  display: flex;
+  
+}
+
+#parents input{
+background-color: green;
+}
+
+#p1, #p2{
+  width: 50%;
+}
+#p1 fieldset, #p2 fieldset {
+  border: red 5px solid;
+  border-style: outset;
+}
+legend{
+font-size: 18px;
+}
+</style>
+<title>Rexburg Track Club</title>
+</head>
+<body>
+  <header>
+  
+    <nav>
+    <img id="logo" src="logo.png" alt="club logo" width="100"> 
+	    <div class="black">
+	      <p>This is black</p>
+      </div>
+      
+      <div class="red">
+	      <ul class="navBar">
+             <li><a href="assignment04.html">Home</a></li>
+             <li><a href="assignment04-1.html">Sign Up</a></li>
+             <li><a href="assignment04-2.html">Courses</a></li>
+        </ul>
+      </div>
+      
+      <div class="black">
+	      <p>This is black</p>
+      </div>
+    </nav>
+    
+  </header>
+  
+  <div class="middle">
+      <h1 class="grayText title">Rexburg Track Club: Sign Up</h1>
+      <img id="clubImg" src="club.png" alt="photo of club members at the starting line">
+
+    <div class="signUp">
+      <p class="grayText">Sign up form HERE</p>
+      <form>
+	      <fieldset id="firstForm">
+        <legend> Athlete</legend>
+        
+          <div id="aName">
+           <label> First Name:</label>
+            <input type="text" name="fName" placeholder="Sally" maxlength="12">
+            <label>MI</label>
+            <input type="text" name="mName" placeholder="A" maxlength=1 style="width: 15px; text-align: center;">
+            <label>Last Name:</label>
+            <input type="text" name="lName" placeholder="Smith" maxlength=20>
+          </div>
+          
+          <div id="ageQ">
+            <label>Date of Birth:</label>
+            <input type="text" name="DOB" placeholder="01/01/2001">
+            <br />
+            <label><strong>Age</strong> As of July 13, 2019</label>
+            <input type="number" name="age" placeholder="10" min="7" max="12">
+            <br />
+            <label><strong>Grade</strong> As of August, 2019</label>
+            <input type="number" name="age" placeholder="10" min="5" max="12">
+            <br/>
+          </div>
+          
+          <div id="ID">
+            <label>Gender:</label>
+            <input class="radio" type="radio" name="gender" value="M"> Male
+            <input class="radio" type="radio" name="gender" value="F">Female
+            <br/>
+            <label>US Citizen:</label>
+            <input class="radio" type="radio" name="citizen" value="Y"> Yes
+            <input class="radio" type="radio" name="citizen" value="N">No
+          </div>
+          
+          <div id="adress">
+            <label>Street Adress</label>
+            <input class="adress" type="text" name="street adress" maxlength=30>
+            <br/>
+            <label>City</label>
+            <input class="adress" type="text" name="city" maxlength=15>
+            <br/>
+            <label>State</label>
+            <select name="state">
+              <option value="NONE" disabled selected>--</option>
+              <option value="ID">ID</option>
+              <option value="UT">UT</option>
+            </select>
+            <label>Zip Code</label>
+            <input type="number" name="zip" min="00001" max="99999" >
+          </div>
+          
+          <div id="uniform">
+            <label>Uniform Size</label> 
+            <select style="width: 110px;">
+              <option value="none" disabled selected>------------</option>
+              <option value="Y-sm">Youth Small</option>
+              <option value="Y-med">Youth Medium</option>
+              <option value="Y-large">Youth Large</option>
+              <option value="Y-XL">Youth XL</option>
+              <option value="A-sm">Adult Small</option>
+              <option value="A-med">Adult Medium</option>
+            </select>
+          </div>
+        </fieldset>
+
+      <div id="parents">
+      <div id="p1">
+      <fieldset>
+      <legend>Parent1</legend>
+         <label>First Name:</label>
+        <input id="fn"type="text" name="fName" placeholder="Martha" maxlength="12">
+        <label>MI</label>
+        <input id="mi" type="text" name="mName" placeholder="A" maxlength=1 style="width: 15px; text-align: center;">
+        <label>Last Name:</label>
+        <input id="p1LN" type="text" name="lName" placeholder="Smith" maxlength=20>
+        <br>
+	<label style="margin-right:27px">Email:</label> 
+        <input id="email" type="email" name="p1Email">
+	<br>
+        <label>Cell Phone:</label>
+        <input id="phone" type="tel" name="p1Numer">
+      </fieldset>
+     </div>
+     
+     <div id="p2"> 
+       <fieldset>
+      <legend>Parent2</legend>
+         <label for="fn2">First Name:</label>
+        <input id="fn2"type="text" name="p2fName" placeholder="Steve" maxlength="12">
+        <label for="mi2">MI</label>
+        <input id="mi2" type="text" name="p2mName" placeholder="A" maxlength=1 style="width: 15px; text-align: center;">
+        <label for="p1LN2">Last Name:</label>
+        <input id="p1LN2" type="text" name="p2lName" placeholder="Smith" maxlength=20>
+        <br>
+	<label style="margin-right:27px" for"email2">Email:</label> 
+        <input id="email2" type="email" name="p2Email">
+	<br>
+        <label for="phone2">Cell Phone:</label>
+        <input id="phone2" type="tel" name="p2Numer">
+      </fieldset>
+      </div>
+      </div>
+      <input type="reset" value="Reset">
+      <input type="submit" value="Register">
+      </form>
+    </div>
+    
+    <div class="about grayText">
+    <hr/>
+      <p>President: Doug Stutz</p>
+      <p> Phone: xxx-xxx-xxxx</p>
+      <p> Email: rexburgtrackclub@gmail.com</p>
+    </div>
+  </div>
+  <div class="spacer">
+  </div>
+</body>
+</html>
