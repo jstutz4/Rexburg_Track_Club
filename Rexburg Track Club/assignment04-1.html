@@ -12,37 +12,34 @@ font-family: Georgia;
 font-size: 12px;
 text-align: left;
 display: inline-block;
-width: 90%
+width: 90%;
 }
 
 #firstForm {
   border: red 5px solid;
   border-style: inset;
 }
+
 #firstForm label{
   padding:5px;
 }
+
 form input{
   width: 75px;
   margin: 5px;
 }
+
 form .radio{
   width: 20px;
 }
+
 form .adress{
   width: 200px;
-}
-form{
-  border: none;
 }
 
 #parents {
   display: flex;
   
-}
-
-#parents input{
-background-color: green;
 }
 
 #p1, #p2{
@@ -51,6 +48,7 @@ background-color: green;
 #p1 fieldset, #p2 fieldset {
   border: red 5px solid;
   border-style: outset;
+  padding-right: 0;
 }
 legend{
 font-size: 18px;
@@ -71,7 +69,7 @@ font-size: 18px;
 	      <ul class="navBar">
              <li><a href="assignment04.html">Home</a></li>
              <li><a href="assignment04-1.html">Sign Up</a></li>
-             <li><a href="assignment04-2.html">Courses</a></li>
+             
         </ul>
       </div>
       
@@ -83,11 +81,12 @@ font-size: 18px;
   </header>
   
   <div class="middle">
-      <h1 class="grayText title">Rexburg Track Club: Sign Up</h1>
+     <h1 class="grayText title">Rexburg Track Club: Sign Up</h1>
       <img id="clubImg" src="club.png" alt="photo of club members at the starting line">
-
+  
     <div class="signUp">
-      <p class="grayText">Sign up form HERE</p>
+    <hr>
+      <!--<p class="grayText">Sign up form HERE</p>!-->
       <form>
 	      <fieldset id="firstForm">
         <legend> Athlete</legend>
@@ -105,10 +104,10 @@ font-size: 18px;
             <label>Date of Birth:</label>
             <input type="text" name="DOB" placeholder="01/01/2001">
             <br />
-            <label><strong>Age</strong> As of July 13, 2019</label>
+            <label><span style="font-weight: bold">Age</span> As of July 13, 2019</label>
             <input type="number" name="age" placeholder="10" min="7" max="12">
             <br />
-            <label><strong>Grade</strong> As of August, 2019</label>
+            <label><span style="font-weight: bold">Grade</span> As of August, 2019</label>
             <input type="number" name="age" placeholder="10" min="5" max="12">
             <br/>
           </div>
@@ -165,11 +164,11 @@ font-size: 18px;
         <label>Last Name:</label>
         <input id="p1LN" type="text" name="lName" placeholder="Smith" maxlength=20>
         <br>
-	<label style="margin-right:27px">Email:</label> 
-        <input id="email" type="email" name="p1Email">
-	<br>
         <label>Cell Phone:</label>
         <input id="phone" type="tel" name="p1Numer">
+        <br>
+        <label >Email:</label> 
+        <input style="width: 168px" id="email" type="email" name="p1Email">
       </fieldset>
      </div>
      
@@ -183,11 +182,11 @@ font-size: 18px;
         <label for="p1LN2">Last Name:</label>
         <input id="p1LN2" type="text" name="p2lName" placeholder="Smith" maxlength=20>
         <br>
-	<label style="margin-right:27px" for"email2">Email:</label> 
-        <input id="email2" type="email" name="p2Email">
-	<br>
         <label for="phone2">Cell Phone:</label>
         <input id="phone2" type="tel" name="p2Numer">
+        <br>
+        <label >Email:</label> 
+        <input style="width: 168px" id="email2" type="email" name="p2Email">
       </fieldset>
       </div>
       </div>
@@ -200,7 +199,7 @@ font-size: 18px;
     <hr/>
       <p>President: Doug Stutz</p>
       <p> Phone: xxx-xxx-xxxx</p>
-      <p> Email: rexburgtrackclub@gmail.com</p>
+      <p style="padding-bottom: 5px;"> Email: rexburgtrackclub@gmail.com</p>
     </div>
   </div>
   <div class="spacer">
